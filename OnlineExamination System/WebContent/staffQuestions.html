@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function  Validateform(){
+	
+	question=document.getElementById("question").value;
+	document.getElementById("que").innerHTML="";
+	
+	question=document.getElementById("ans1").value;
+	document.getElementById("a1").innerHTML="";
+	
+	question=document.getElementById("ans2").value;
+	document.getElementById("a2").innerHTML="";
+	
+	question=document.getElementById("ans3").value;
+	document.getElementById("a3").innerHTML="";
+	
+	question=document.getElementById("ans4").value;
+	document.getElementById("a4").innerHTML="";
+	
+    var flag=0;
+	
+	if(question == ""){
+		flag=1;
+		document.getElementById("que").innerHTML="field cann't be empty";
+		}
+	
+	if(ans1 == ""){
+		flag=1;
+		document.getElementById("a1").innerHTML="field cann't be empty";
+	}
+	
+	if(ans2 == ""){
+		flag=1;
+		document.getElementById("a2").innerHTML="field cann't be empty";
+	}
+	
+	if(ans3 == ""){
+		flag=1;
+		document.getElementById("a3").innerHTML="field cann't be empty";
+	}
+	
+	if(ans4 == ""){
+		flag=1;
+		document.getElementById("a4").innerHTML="field cann't be empty";
+	}
+	
+	
+	if(flag==0) {
+	      location.reload();
+	     // return true;
+	} else {
+	      return false;
+	}
+	
+}
+	
+	
+}
+
+	function testing(value) {
+	var element = document.getElementById("savequestion");
+		if(value == "exist") {
+			element.style.display = "block";
+		} 
+	}
+</script>
+</head>	
+<meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus�">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>School Examination System</title>
+  <link rel="stylesheet" href="staffQuestions.css"/> 
+</head>
+
+<form action="staff" method="post" >
+<body>
+<div class="wrapper">
+<div class="container">
+		<!-- Banner -->
+			<header class="header">
+				<div class="header-logo"><img src="logo.png" height="100px" width="100px" alt="logo failed"/></div>
+				<div class="header-text">
+					<h1 class="header-text-h3" style="color:white">Online Examination System</h1>
+				</div>
+			</header>
+			
+	<div class="empty-cls">
+		<div class="log-logo"><img src="log_logo.PNG" height="35px" width="33px" alt="logo failed"/></div>
+		<div class="log-as"><b><p>Logged In As</p></b></div>
+		<div class="log-name"><b><p>Parasuram</p></b></div>
+	</div>
+	
+	   <div class ="second-sp">	
+	        <div class ="ver-line"></div>
+	        
+	         <div class="text-box1">
+	         <div class="text"><b>Take Exam</b>
+	        </div>
+	       </div>
+	       
+	      <div class="text-box2">
+	       <div class="text2"><b>Change Password</b>
+	         </div>
+	       </div>
+	       
+	      <div class="text-box3">
+	      <div class="text3"><b>Log Out</b>
+	     </div>
+	     </div>
+	
+	        <div class ="ver-line1"></div>
+	  </div>
+	  
+	     
+	     <div class="form1">
+	       <div class="question"><b>Question No.1</b></div>
+			<div class="ques"><b>Question:</b></div>
+			<div class="textb"><textarea rows="4" cols="48" name="question"></textarea></div>
+								<span id="que" style="color:red;"></span>
+			<div class="para1">Options</div>
+			<div class="para2">Select</div>
+			
+			       <div class="option1"><b>A:</b> 
+			        <div class="opt1"><input type="text" size="48" name="ans1"/>
+			        					<span id="a1" style="color:red;"></span>
+			        <input type="radio" name="radio" class="rad1"></div>
+			       </div>
+			       
+			        <div class="option2"><b>B:</b> 
+			        <div class="opt2"><input type="text" size="48" name="ans2"/>
+			        				<span id="a2" style="color:red;"></span>
+			        <input type="radio" name="radio" class="rad2"></div>
+			       </div>
+			       
+			        <div class="option3"><b>C:</b> 
+			        <div class="opt3"><input type="text" size="48" name="ans3"/>
+			        					<span id="a3" style="color:red;"></span>
+			        <input type="radio" name="radio" class="rad3"></div>
+			       </div>
+			       
+			        <div class="option4"><b>D:</b> 
+			        <div class="opt4"><input type="text" size="48" name="ans4"/>
+			        					<span id="a4" style="color:red;"></span>
+			        <input type="radio" name="radio" class="rad4"></div>
+			       </div>
+			       
+			       <div ><button class="button1"  style="color:white" onSubmit="return Validateform()" onclick="testing('exist')" >Save Question</button>		 
+			       <button class="button2"  style="color:white" >Save Exam</button></div>			 
+			   
+	        
+		</div>
+		
+		
+		
+		 <div class="form2">
+		  <div ><button class="button3"  style="color:white" >New Question</button></div> 
+		 </div>
+		 
+		 
+		 
+		 
+</div>
+	  <div id="savequestion">
+		<div class="msg">
+           <div class="saveque"><b><p>Question Saved Successfully</p></b></div>
+        </div>
+      </div>
+     
+     <center>
+     <div class="form3">
+     	<div class="Exam"><b>Examination Details</b></div>
+     	 <div class="Title"><b>Exam Title:</b> 
+			        <div class="Title1"><input type="text" size="43"/></div>
+		</div><br><br/>
+		<div class="Total"><b>Total Marks:</b> 
+			        <div class="Total1"><input type="text" size="2"/></div>
+		</div><br><br/>
+		<div class="Percent"><b>Pass Percentage:</b> 
+			        <div class="Pass"><input type="text" size="2"/></div>
+		</div>
+		 <div >
+		 	   <button class="save"  style="color:white" >Save </button>		 
+		       <button class="cancle"  style="color:white" >Cancle</button>
+		</div>	
+					
+     </div> 
+     </center>
+
+</div>       
+
+</body>
+</form>
+</html>
+		

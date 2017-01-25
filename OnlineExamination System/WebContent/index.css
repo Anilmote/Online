@@ -1,0 +1,25 @@
+*{margin:0;padding:0;}
+.wrapper{width:100%;height:800px;background-color:#FFCCCC;font-family: "Open Sans",sans-serif;}
+
+.container{width:60%;  margin:auto;padding:6% 0 0;}
+.header{height:100px;background-color:#D00000 ;}
+.header-logo{float:left;width:25%;height:100px; }
+.header-text{float:left;width:75%;background-color:#D00000;height:75px;padding:25px 0 0 0;}
+.section{background-color:#FFCCFF;padding-top:12px; height: 350px;}
+.section-top{text-align:center;height: 70px;}
+.admin-login{padding:5px;background-color:red;border-radius:4px;border:4px solid black;color:white;}
+.section-bottom{text-align:center;width:60%;margin:auto;height:200px;border:2px solid #FFCCFF;background:#FFCCFF;}
+.section-student{float:left; width: 50%; background:#FFCCFF;}
+.section-teacher{float:left;width: 49%;padding-left:0.5%; background:#FFCCFF;}
+.sec-std-text{background:#660033;}
+.sec-teach-text{background:#660033;}
+.std-btn{padding:5px;background-color:pink;border-radius:4px;font-weight:bold;margin-top:8px;width: 50%;margin:auto;
+border:2px solid black;}
+.teach-btn{padding:5px;background-color:pink;border-radius:4px;font-weight:bold;width: 50%;margin:auto;
+border:2px solid black;}
+.std-btn:hover{border-radius:50px;background-color:black;border:2px solid black;color:pink;}
+.teach-btn:hover{border-radius:50px;background-color:black;border:2px solid black;color:pink;}
+.staff:hover{color:white;background:black;}
+.admin-btn{padding:5px;background-color:red;border-radius:4px;font-weight:bold;margin-top:8px;width: 15%;margin:auto;
+border:2px solid black;}
+.admin-btn:hover{border-radius:50px;background-color:black;border:2px solid black;color:pink;}
